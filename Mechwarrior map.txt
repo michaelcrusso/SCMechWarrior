@@ -1,0 +1,10 @@
+MECHWARRIOR
+
+[] WASD movement for Mechs
+[] Use 13th line to display weapons group information
+[] In between weapons groups, put a red [><] to indicate target acquired.
+[] Use mouse or keyboard keys to rotate subunit (second unit index of main unit) by setting direction in unit EPD within 180 degree range of motion.
+[] Remove unit attacks
+[] In the beginning, perhaps use interceptor-targeting-system as a quick and dirty solution.
+[] Use a location-grid system over current player's mech to determine approximate location of enemy units. For 360 degree range of rotation, slice 180 degrees in front of mech into 30 degree sections to determine if facing is correct and if an attack is permitted. Otherwise, if it's rear 180, cancel the attack. If it's somewhere in the front 180 but not on target, attack ground.
+[] We would probably need triggers for every possible direction the base unit can be facing. We would then have to read values from the direction to determine the maximum possible turret rotation. If the turret rotation exceeds maximum, then it needs to be pushed back to the maximum accepted range limit quickly but not instantly (avoid jerkiness). 
